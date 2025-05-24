@@ -1,0 +1,45 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+logs/
+logs/application.log
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+src/main/resources/db/changelog/**
+/src/main/java/stackover/resource/service/exception/GlobalExceptionHandler.java
+
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+
+/src/main/resources/db/changelog/
+/src/main/resources/docker/
+### Игнорировать файл ###
+liquibase.properties
+docker-compose.yml
+initial-changelog.xml
+db.changelog-master.xml
+*changelog*.xml

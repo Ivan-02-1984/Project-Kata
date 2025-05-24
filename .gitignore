@@ -1,5 +1,20 @@
+# Игнорировать папки сборки Maven
+**/target/
+
+# IntelliJ IDEA
+*.iml
 .idea/
-*.lnk
-*.docx
-*.txt
-Desktop/
+
+# Eclipse
+*.classpath
+*.project
+*.settings/
+
+# Логи, временные файлы
+*.log
+*.tmp
+*.swp
+
+# Операционные системы
+.DS_Store
+Thumbs.db
