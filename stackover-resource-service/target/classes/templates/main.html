@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Overflow - Where Developers Learn, Share, & Build Careers</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
+</head>
+
+<body>
+<!-- Header (will be loaded by JS) -->
+<header id="header" class="sticky-top bg-white shadow-sm"></header>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar (will be loaded by JS) -->
+        <aside id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"></aside>
+
+        <!-- Main content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="d-flex align-items-center">
+                    <svg class="me-3 d-md-none" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <!-- Your SVG wave icon here -->
+                    </svg>
+                    <div>
+                        <h1 class="h4 mb-0">Welcome back, User</h1>
+                        <p class="text-muted mb-0">Find answers to your technical questions and help others answer
+                            theirs.</p>
+                    </div>
+                </div>
+                <a href="/questions/ask" class="btn btn-outline-primary">Ask Question</a>
+            </div>
+
+            <!-- Widgets container -->
+            <div id="widgets-container" class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Reputation</h5>
+                            <p class="card-text">1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Badges</h5>
+                            <p class="card-text">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Tags</h5>
+                            <p class="card-text">0 watched</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questions list -->
+            <div class="mb-4">
+                <h2 class="h5">Interesting posts for you</h2>
+                <p class="text-muted">Based on your viewing history and watched tags. <a href="#"
+                                                                                         class="text-decoration-none">Customize your feed</a></p>
+            </div>
+
+            <div class="list-group mb-4">
+                <!-- Question item -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">React Native Dropdown Picker Category</h5>
+                        <small class="text-muted">1 min ago</small>
+                    </div>
+                    <p class="mb-1">I am a complete beginner and I am building an inventory app in react native. I
+                        came across this external library called Dropdown Picker...</p>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-secondary">javascript</span>
+                        <span class="badge bg-secondary">react-native</span>
+                    </div>
+                </a>
+
+                <!-- More question items can be added here -->
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- Footer (will be loaded by JS) -->
+<footer id="footer" class="bg-dark text-white py-4 mt-auto"></footer>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS files (paths are specified but files don't exist yet) -->
+<script src="/js/header.js"></script>
+<script src="/js/sidebar.js"></script>
+<script src="/js/footer.js"></script>
+</body>
+
+</html>

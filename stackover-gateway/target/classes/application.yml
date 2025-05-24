@@ -1,0 +1,35 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: ${spring.application.name}  # Используем имя приложения как hostname
+    preferIpAddress: false
+    instance-id: ${spring.application.name}:${server.port}
+
+jwt:
+  secret-key: ${JWT_SECRET:RFa4dus-HnNCQ71rIJPFo1HJHl7qWSQuO3cyRE1elssv0Yct9KWUUz7lNiXLZrcbXWiEVLtZtqWqjil71vIwfw}
+
+security:
+  oauth2:
+    client:
+      client-id: your-client-id
+      client-secret: your-client-secret
+  ignored:
+    - /swagger-ui/**
+    - /v3/api-docs/**
+    - /actuator/health

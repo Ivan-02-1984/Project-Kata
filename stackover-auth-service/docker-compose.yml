@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  postgres-auth:
+    image: postgres:13-alpine  # Более легковесный образ
+    container_name: stackover-auth-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: stackover_auth_service
+    ports:
+      - "5433:5432"
+    volumes:
+      - auth_postgres_data:/var/lib/postgresql/data
+      - ./src/main/resources/db/changelog:/docker-entrypoint-initdb.d  # Точный путь к changelog
+    healthcheck:  # Добавляем healthcheck для надежности
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - stackover-net  # Используем общую сеть, если сервисы должны общаться
+
+volumes:
+  auth_postgres_data:
+
+networks:
+  stackover-net:
+    driver: bridge

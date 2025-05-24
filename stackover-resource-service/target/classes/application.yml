@@ -1,0 +1,60 @@
+server:
+  port: 8181
+  tomcat:
+    basedir: ./tmp
+
+spring:
+  profiles:
+    active: local # профиль по умолчанию
+
+  application:
+    name: stackover-resource-service
+
+  jpa:
+    properties:
+      hibernate:
+        order_inserts: true
+        enable_lazy_load_no_trans: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+          batch_size: 20
+        generate_statistics: false
+    show-sql: true
+    database: postgresql
+
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
+      httpclient:
+        connection-timeout: 5000
+        ok-http:
+          read-timeout: 5000
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: ${spring.application.name}
+    prefer-ip-address: false
+    instance-id: ${spring.application.name}:${server.port}
+
+logging:
+        level:
+          org.springframework.web: DEBUG
+          org.springframework.security: DEBUG
+          stackover.resource.service: TRACE
+
+
+  # Добавьте эти новые настройки
+        org.hibernate.SQL: DEBUG
+        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+        org.hibernate.stat: DEBUG
+        org.hibernate.engine.jdbc.spi.SqlStatementLogger: DEBUG
+        org.springframework.transaction: DEBUG
+        org.springframework.orm.jpa: DEBUG

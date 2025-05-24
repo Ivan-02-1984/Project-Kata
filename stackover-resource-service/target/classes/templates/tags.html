@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Метки - StackOverflow</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <script src="/assets/js/loadHeader.js" defer></script>
+    <script src="/assets/js/loadSidebar.js" defer></script>
+    <script src="/assets/js/loadFooter.js" defer></script>
+
+    <style>
+        .sidebar {
+            min-height: calc(100vh - 56px);
+            background-color: #f8f9fa;
+        }
+
+        main {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header"></header>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <aside id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar"></aside>
+
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <h1 class="h2">Метки</h1>
+                    <p>Метка — это ключевое слово, позволяющее отнести ваш вопрос в одну категорию с другими похожими
+                        вопросами.
+                        Благодаря подбору правильных меток другие участники смогут проще найти ваш вопрос и быстрее дать
+                        на него ответ.</p>
+                </div>
+
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Фильтр по меткам...">
+                            <button class="btn btn-sm btn-outline-secondary" type="button">Поиск</button>
+                        </div>
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Популярные</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Новые</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Название</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+
+            </div>
+
+            <nav aria-label="Page navigation" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Назад</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Вперед</a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+    </div>
+</div>
+
+<footer id="footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

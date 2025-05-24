@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: stackover-resource-db
+    environment:
+      POSTGRES_USER: postgres       # соответствует вашему application.yml
+      POSTGRES_PASSWORD: root       # пароль из application.yml
+      POSTGRES_DB: stackover_resource_service  # имя БД из URL
+    ports:
+      - "5432:5432"                # стандартный порт PostgreSQL
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/changelog:/docker-entrypoint-initdb.d  # для Liquibase (опционально)
+
+volumes:
+  postgres_data:

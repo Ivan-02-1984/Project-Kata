@@ -1,0 +1,8 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: ${JDBC_PROTOCOL}://${DB_SERVER}:${DB_PORT}/${DB_NAME}?currentSchema=${DB_SCHEMA}&createSchemaIfNotExist=${HIBERNATE_DDL_CREATE}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}

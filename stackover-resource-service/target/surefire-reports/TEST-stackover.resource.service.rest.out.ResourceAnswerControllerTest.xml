@@ -1,0 +1,1649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="stackover.resource.service.rest.out.ResourceAnswerControllerTest" time="70.745" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\1\Desktop\kata_Project\stackover-resource-service\target\test-classes;C:\Users\1\Desktop\kata_Project\stackover-resource-service\target\classes;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.4\spring-boot-starter-data-jpa-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.4\spring-boot-starter-aop-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\spring-aop\6.1.5\spring-aop-6.1.5.jar;C:\Users\1\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.4\spring-boot-starter-jdbc-3.2.4.jar;C:\Users\1\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\1\.m2\repository\org\springframework\spring-jdbc\6.1.5\spring-jdbc-6.1.5.jar;C:\Users\1\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\1\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\1\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\1\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\1\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\1\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\1\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\1\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\1\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\1\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\1\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\1\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\1\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\1\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\1\.m2\repository\org\springframework\data\spring-data-jpa\3.2.4\spring-data-jpa-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\data\spring-data-commons\3.2.4\spring-data-commons-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\spring-orm\6.1.5\spring-orm-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-context\6.1.5\spring-context-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-tx\6.1.5\spring-tx-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-beans\6.1.5\spring-beans-6.1.5.jar;C:\Users\1\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\1\.m2\repository\org\springframework\spring-aspects\6.1.5\spring-aspects-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.4\spring-boot-starter-validation-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.4\spring-boot-starter-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.4\spring-boot-autoconfigure-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.4\spring-boot-starter-logging-3.2.4.jar;C:\Users\1\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\1\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\1\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\1\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\1\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar;C:\Users\1\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.19\tomcat-embed-el-10.1.19.jar;C:\Users\1\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\1\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.4\spring-boot-starter-web-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.4\spring-boot-starter-json-3.2.4.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.4\spring-boot-starter-tomcat-3.2.4.jar;C:\Users\1\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.19\tomcat-embed-core-10.1.19.jar;C:\Users\1\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.19\tomcat-embed-websocket-10.1.19.jar;C:\Users\1\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar;C:\Users\1\.m2\repository\io\micrometer\micrometer-observation\1.12.4\micrometer-observation-1.12.4.jar;C:\Users\1\.m2\repository\io\micrometer\micrometer-commons\1.12.4\micrometer-commons-1.12.4.jar;C:\Users\1\.m2\repository\org\springframework\spring-webmvc\6.1.5\spring-webmvc-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-expression\6.1.5\spring-expression-6.1.5.jar;C:\Users\1\.m2\repository\org\liquibase\liquibase-core\4.24.0\liquibase-core-4.24.0.jar;C:\Users\1\.m2\repository\com\opencsv\opencsv\5.8\opencsv-5.8.jar;C:\Users\1\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\1\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\1\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\1\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\1\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;C:\Users\1\.m2\repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-eureka-client\4.1.0\spring-cloud-starter-netflix-eureka-client-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-starter\4.1.0\spring-cloud-starter-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-context\4.1.0\spring-cloud-context-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\security\spring-security-rsa\1.1.1\spring-security-rsa-1.1.1.jar;C:\Users\1\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.74\bcprov-jdk18on-1.74.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-netflix-eureka-client\4.1.0\spring-cloud-netflix-eureka-client-4.1.0.jar;C:\Users\1\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;C:\Users\1\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;C:\Users\1\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;C:\Users\1\.m2\repository\com\netflix\eureka\eureka-client\2.0.1\eureka-client-2.0.1.jar;C:\Users\1\.m2\repository\com\netflix\netflix-commons\netflix-eventbus\0.3.0\netflix-eventbus-0.3.0.jar;C:\Users\1\.m2\repository\com\netflix\netflix-commons\netflix-infix\0.3.0\netflix-infix-0.3.0.jar;C:\Users\1\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\1\.m2\repository\joda-time\joda-time\2.3\joda-time-2.3.jar;C:\Users\1\.m2\repository\org\antlr\antlr-runtime\3.4\antlr-runtime-3.4.jar;C:\Users\1\.m2\repository\org\antlr\stringtemplate\3.2.1\stringtemplate-3.2.1.jar;C:\Users\1\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\1\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\1\.m2\repository\org\apache\commons\commons-math\2.2\commons-math-2.2.jar;C:\Users\1\.m2\repository\com\thoughtworks\xstream\xstream\1.4.19\xstream-1.4.19.jar;C:\Users\1\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\1\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\1\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar;C:\Users\1\.m2\repository\com\netflix\servo\servo-core\0.12.21\servo-core-0.12.21.jar;C:\Users\1\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\1\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\1\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\1\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\1\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\1\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\1\.m2\repository\org\codehaus\jettison\jettison\1.4.0\jettison-1.4.0.jar;C:\Users\1\.m2\repository\com\netflix\eureka\eureka-core\2.0.1\eureka-core-2.0.1.jar;C:\Users\1\.m2\repository\com\fasterxml\woodstox\woodstox-core\6.2.1\woodstox-core-6.2.1.jar;C:\Users\1\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.1\stax2-api-4.2.1.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-starter-loadbalancer\4.1.0\spring-cloud-starter-loadbalancer-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-loadbalancer\4.1.0\spring-cloud-loadbalancer-4.1.0.jar;C:\Users\1\.m2\repository\io\projectreactor\reactor-core\3.6.4\reactor-core-3.6.4.jar;C:\Users\1\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\1\.m2\repository\io\projectreactor\addons\reactor-extra\3.5.1\reactor-extra-3.5.1.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-cache\3.2.4\spring-boot-starter-cache-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\spring-context-support\6.1.5\spring-context-support-6.1.5.jar;C:\Users\1\.m2\repository\com\stoyanr\evictor\1.0.0\evictor-1.0.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-starter-openfeign\4.1.0\spring-cloud-starter-openfeign-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-openfeign-core\4.1.0\spring-cloud-openfeign-core-4.1.0.jar;C:\Users\1\.m2\repository\io\github\openfeign\form\feign-form-spring\3.8.0\feign-form-spring-3.8.0.jar;C:\Users\1\.m2\repository\io\github\openfeign\form\feign-form\3.8.0\feign-form-3.8.0.jar;C:\Users\1\.m2\repository\commons-fileupload\commons-fileupload\1.5\commons-fileupload-1.5.jar;C:\Users\1\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-commons\4.1.0\spring-cloud-commons-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\security\spring-security-crypto\6.2.3\spring-security-crypto-6.2.3.jar;C:\Users\1\.m2\repository\io\github\openfeign\feign-core\13.1\feign-core-13.1.jar;C:\Users\1\.m2\repository\io\github\openfeign\feign-slf4j\13.1\feign-slf4j-13.1.jar;C:\Users\1\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\1\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\1\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.4\spring-boot-starter-test-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-test\3.2.4\spring-boot-test-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.4\spring-boot-test-autoconfigure-3.2.4.jar;C:\Users\1\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\1\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\1\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\1\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\1\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\1\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\1\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\1\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\1\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\1\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\1\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\1\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\1\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\1\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\1\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\1\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\1\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\1\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\1\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\1\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\1\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\1\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\1\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\1\.m2\repository\org\springframework\spring-core\6.1.5\spring-core-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-jcl\6.1.5\spring-jcl-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-test\6.1.5\spring-test-6.1.5.jar;C:\Users\1\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-ui\1.7.0\springdoc-openapi-ui-1.7.0.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-webmvc-core\1.7.0\springdoc-openapi-webmvc-core-1.7.0.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-common\1.7.0\springdoc-openapi-common-1.7.0.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-core\2.2.9\swagger-core-2.2.9.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-annotations\2.2.9\swagger-annotations-2.2.9.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-models\2.2.9\swagger-models-2.2.9.jar;C:\Users\1\.m2\repository\org\mapstruct\mapstruct\1.6.0\mapstruct-1.6.0.jar;C:\Users\1\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\1\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\1\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\1\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\1\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\1\.m2\repository\org\testcontainers\testcontainers\1.20.1\testcontainers-1.20.1.jar;C:\Users\1\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\1\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\1\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\1\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\1\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\1\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\1\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\1\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.4.0\docker-java-transport-zerodep-3.4.0.jar;C:\Users\1\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\1\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\1\.m2\repository\org\testcontainers\postgresql\1.20.1\postgresql-1.20.1.jar;C:\Users\1\.m2\repository\org\testcontainers\jdbc\1.20.1\jdbc-1.20.1.jar;C:\Users\1\.m2\repository\org\testcontainers\database-commons\1.20.1\database-commons-1.20.1.jar;C:\Users\1\.m2\repository\org\testcontainers\junit-jupiter\1.20.1\junit-jupiter-1.20.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Samara"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\openjdk\jdk-21.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\1\AppData\Local\Temp\surefire8929362421729791272\surefirebooter-20250522235223343_3.jar C:\Users\1\AppData\Local\Temp\surefire8929362421729791272 2025-05-22T23-52-22_843-jvmRun1 surefire-20250522235223343_1tmp surefire_0-20250522235223343_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\1\Desktop\kata_Project\stackover-resource-service\target\test-classes;C:\Users\1\Desktop\kata_Project\stackover-resource-service\target\classes;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.4\spring-boot-starter-data-jpa-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.4\spring-boot-starter-aop-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\spring-aop\6.1.5\spring-aop-6.1.5.jar;C:\Users\1\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.4\spring-boot-starter-jdbc-3.2.4.jar;C:\Users\1\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\1\.m2\repository\org\springframework\spring-jdbc\6.1.5\spring-jdbc-6.1.5.jar;C:\Users\1\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\1\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\1\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\1\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\1\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\1\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\1\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\1\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\1\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\1\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\1\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\1\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\1\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\1\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\1\.m2\repository\org\springframework\data\spring-data-jpa\3.2.4\spring-data-jpa-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\data\spring-data-commons\3.2.4\spring-data-commons-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\spring-orm\6.1.5\spring-orm-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-context\6.1.5\spring-context-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-tx\6.1.5\spring-tx-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-beans\6.1.5\spring-beans-6.1.5.jar;C:\Users\1\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\1\.m2\repository\org\springframework\spring-aspects\6.1.5\spring-aspects-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.4\spring-boot-starter-validation-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.4\spring-boot-starter-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.4\spring-boot-autoconfigure-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.4\spring-boot-starter-logging-3.2.4.jar;C:\Users\1\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\1\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\1\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\1\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\1\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar;C:\Users\1\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.19\tomcat-embed-el-10.1.19.jar;C:\Users\1\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\1\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.4\spring-boot-starter-web-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.4\spring-boot-starter-json-3.2.4.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.4\spring-boot-starter-tomcat-3.2.4.jar;C:\Users\1\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.19\tomcat-embed-core-10.1.19.jar;C:\Users\1\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.19\tomcat-embed-websocket-10.1.19.jar;C:\Users\1\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar;C:\Users\1\.m2\repository\io\micrometer\micrometer-observation\1.12.4\micrometer-observation-1.12.4.jar;C:\Users\1\.m2\repository\io\micrometer\micrometer-commons\1.12.4\micrometer-commons-1.12.4.jar;C:\Users\1\.m2\repository\org\springframework\spring-webmvc\6.1.5\spring-webmvc-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-expression\6.1.5\spring-expression-6.1.5.jar;C:\Users\1\.m2\repository\org\liquibase\liquibase-core\4.24.0\liquibase-core-4.24.0.jar;C:\Users\1\.m2\repository\com\opencsv\opencsv\5.8\opencsv-5.8.jar;C:\Users\1\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\1\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\1\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\1\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\1\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;C:\Users\1\.m2\repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-eureka-client\4.1.0\spring-cloud-starter-netflix-eureka-client-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-starter\4.1.0\spring-cloud-starter-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-context\4.1.0\spring-cloud-context-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\security\spring-security-rsa\1.1.1\spring-security-rsa-1.1.1.jar;C:\Users\1\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.74\bcprov-jdk18on-1.74.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-netflix-eureka-client\4.1.0\spring-cloud-netflix-eureka-client-4.1.0.jar;C:\Users\1\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;C:\Users\1\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;C:\Users\1\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;C:\Users\1\.m2\repository\com\netflix\eureka\eureka-client\2.0.1\eureka-client-2.0.1.jar;C:\Users\1\.m2\repository\com\netflix\netflix-commons\netflix-eventbus\0.3.0\netflix-eventbus-0.3.0.jar;C:\Users\1\.m2\repository\com\netflix\netflix-commons\netflix-infix\0.3.0\netflix-infix-0.3.0.jar;C:\Users\1\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\1\.m2\repository\joda-time\joda-time\2.3\joda-time-2.3.jar;C:\Users\1\.m2\repository\org\antlr\antlr-runtime\3.4\antlr-runtime-3.4.jar;C:\Users\1\.m2\repository\org\antlr\stringtemplate\3.2.1\stringtemplate-3.2.1.jar;C:\Users\1\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\1\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\1\.m2\repository\org\apache\commons\commons-math\2.2\commons-math-2.2.jar;C:\Users\1\.m2\repository\com\thoughtworks\xstream\xstream\1.4.19\xstream-1.4.19.jar;C:\Users\1\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\1\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\1\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar;C:\Users\1\.m2\repository\com\netflix\servo\servo-core\0.12.21\servo-core-0.12.21.jar;C:\Users\1\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\1\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\1\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\1\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\1\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\1\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\1\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\1\.m2\repository\org\codehaus\jettison\jettison\1.4.0\jettison-1.4.0.jar;C:\Users\1\.m2\repository\com\netflix\eureka\eureka-core\2.0.1\eureka-core-2.0.1.jar;C:\Users\1\.m2\repository\com\fasterxml\woodstox\woodstox-core\6.2.1\woodstox-core-6.2.1.jar;C:\Users\1\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.1\stax2-api-4.2.1.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-starter-loadbalancer\4.1.0\spring-cloud-starter-loadbalancer-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-loadbalancer\4.1.0\spring-cloud-loadbalancer-4.1.0.jar;C:\Users\1\.m2\repository\io\projectreactor\reactor-core\3.6.4\reactor-core-3.6.4.jar;C:\Users\1\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\1\.m2\repository\io\projectreactor\addons\reactor-extra\3.5.1\reactor-extra-3.5.1.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-cache\3.2.4\spring-boot-starter-cache-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\spring-context-support\6.1.5\spring-context-support-6.1.5.jar;C:\Users\1\.m2\repository\com\stoyanr\evictor\1.0.0\evictor-1.0.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-starter-openfeign\4.1.0\spring-cloud-starter-openfeign-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-openfeign-core\4.1.0\spring-cloud-openfeign-core-4.1.0.jar;C:\Users\1\.m2\repository\io\github\openfeign\form\feign-form-spring\3.8.0\feign-form-spring-3.8.0.jar;C:\Users\1\.m2\repository\io\github\openfeign\form\feign-form\3.8.0\feign-form-3.8.0.jar;C:\Users\1\.m2\repository\commons-fileupload\commons-fileupload\1.5\commons-fileupload-1.5.jar;C:\Users\1\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\1\.m2\repository\org\springframework\cloud\spring-cloud-commons\4.1.0\spring-cloud-commons-4.1.0.jar;C:\Users\1\.m2\repository\org\springframework\security\spring-security-crypto\6.2.3\spring-security-crypto-6.2.3.jar;C:\Users\1\.m2\repository\io\github\openfeign\feign-core\13.1\feign-core-13.1.jar;C:\Users\1\.m2\repository\io\github\openfeign\feign-slf4j\13.1\feign-slf4j-13.1.jar;C:\Users\1\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\1\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\1\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.4\spring-boot-starter-test-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-test\3.2.4\spring-boot-test-3.2.4.jar;C:\Users\1\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.4\spring-boot-test-autoconfigure-3.2.4.jar;C:\Users\1\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\1\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\1\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\1\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\1\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\1\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\1\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\1\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\1\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\1\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\1\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\1\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\1\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\1\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\1\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\1\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\1\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\1\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\1\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\1\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\1\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\1\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\1\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\1\.m2\repository\org\springframework\spring-core\6.1.5\spring-core-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-jcl\6.1.5\spring-jcl-6.1.5.jar;C:\Users\1\.m2\repository\org\springframework\spring-test\6.1.5\spring-test-6.1.5.jar;C:\Users\1\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-ui\1.7.0\springdoc-openapi-ui-1.7.0.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-webmvc-core\1.7.0\springdoc-openapi-webmvc-core-1.7.0.jar;C:\Users\1\.m2\repository\org\springdoc\springdoc-openapi-common\1.7.0\springdoc-openapi-common-1.7.0.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-core\2.2.9\swagger-core-2.2.9.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-annotations\2.2.9\swagger-annotations-2.2.9.jar;C:\Users\1\.m2\repository\io\swagger\core\v3\swagger-models\2.2.9\swagger-models-2.2.9.jar;C:\Users\1\.m2\repository\org\mapstruct\mapstruct\1.6.0\mapstruct-1.6.0.jar;C:\Users\1\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\1\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\1\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\1\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\1\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\1\.m2\repository\org\testcontainers\testcontainers\1.20.1\testcontainers-1.20.1.jar;C:\Users\1\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\1\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\1\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\1\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\1\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\1\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\1\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\1\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.4.0\docker-java-transport-zerodep-3.4.0.jar;C:\Users\1\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\1\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\1\.m2\repository\org\testcontainers\postgresql\1.20.1\postgresql-1.20.1.jar;C:\Users\1\.m2\repository\org\testcontainers\jdbc\1.20.1\jdbc-1.20.1.jar;C:\Users\1\.m2\repository\org\testcontainers\database-commons\1.20.1\database-commons-1.20.1.jar;C:\Users\1\.m2\repository\org\testcontainers\junit-jupiter\1.20.1\junit-jupiter-1.20.1.jar;"/>
+    <property name="test" value="ResourceAnswerControllerTest"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\1"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\openjdk\jdk-21.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\1\Desktop\kata_Project\stackover-resource-service"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\1\AppData\Local\Temp\surefire8929362421729791272\surefirebooter-20250522235223343_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="user.name" value="1"/>
+    <property name="stdout.encoding" value="Cp1251"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\1\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\1\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="C:\Users\1\Desktop\kata_Project\stackover-resource-service"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="21516"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\openjdk\jdk-21.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\1\product\18.0.0\dbhomeXE\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\openjdk\jdk-21.0.1\bin;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.9.9\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1.4\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.5\bin;C:\Users\1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\apache-maven-3.9.9\bin;C:\openjdk\jdk-17.0.12\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Minikube\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1.4\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.5\bin;;C:\Users\1\AppData\Local\Programs\Microsoft VS Code\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[stackover-resource-service] "/>
+  </properties>
+  <testcase name="repeatDownVote_ShouldNotChangeAnything" classname="stackover.resource.service.rest.out.ResourceAnswerControllerTest" time="5.638">
+    <system-out><![CDATA[23:52:25.126 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [stackover.resource.service.SpringSimpleContextTest]: SpringSimpleContextTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:52:25.431 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration stackover.resource.service.ResourceServiceApplication for test class stackover.resource.service.rest.out.ResourceAnswerControllerTest
+23:52:25.727 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+23:52:25.734 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+23:52:25.844 [main] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.20.1
+23:52:26.466 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+23:52:27.119 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+23:52:27.122 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+23:52:27.156 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 28.0.4
+  API Version: 1.48
+  Operating System: Docker Desktop
+  Total Memory: 7844 MB
+23:52:27.742 [main] INFO tc.testcontainers/ryuk:0.8.1 -- Creating container for image: testcontainers/ryuk:0.8.1
+23:52:28.152 [main] INFO org.testcontainers.utility.RegistryAuthLocator -- Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+23:52:28.409 [main] INFO tc.testcontainers/ryuk:0.8.1 -- Container testcontainers/ryuk:0.8.1 is starting: 831a8a934950686c95bb60f9089e57cc834903499282715f0f348f88b340381f
+23:52:29.512 [main] INFO tc.testcontainers/ryuk:0.8.1 -- Container testcontainers/ryuk:0.8.1 started in PT1.7700089S
+23:52:29.531 [main] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+23:52:29.532 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+23:52:29.534 [main] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+23:52:29.535 [main] INFO tc.postgres:14.5 -- Creating container for image: postgres:14.5
+23:52:29.769 [main] INFO tc.postgres:14.5 -- Container postgres:14.5 is starting: 4a2431de03b344cb87e2295f1c99311bf6fc31284cf7b7e66fcdb466f99f3465
+23:52:32.498 [main] INFO tc.postgres:14.5 -- Container postgres:14.5 started in PT2.9632837S
+23:52:32.500 [main] INFO tc.postgres:14.5 -- Container is started (JDBC URL: jdbc:postgresql://localhost:55445/test?loggerLevel=OFF)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2025-05-22T23:52:33.428+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.r.o.ResourceAnswerControllerTest   : Starting ResourceAnswerControllerTest using Java 21.0.1 with PID 21516 (started by 1 in C:\Users\1\Desktop\kata_Project\stackover-resource-service)
+2025-05-22T23:52:33.430+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] s.r.s.r.o.ResourceAnswerControllerTest   : Running with Spring Boot v3.2.4, Spring v6.1.5
+2025-05-22T23:52:33.431+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.r.o.ResourceAnswerControllerTest   : The following 1 profile is active: "test"
+2025-05-22T23:52:33.484+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5584d9c6
+2025-05-22T23:52:35.650+04:00  INFO 21516 --- [stackover-resource-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-22T23:52:36.085+04:00  INFO 21516 --- [stackover-resource-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 417 ms. Found 8 JPA repository interfaces.
+2025-05-22T23:52:37.062+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6bc568c7-75de-3861-8a6f-113e4af0620f
+2025-05-22T23:52:39.561+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-22T23:52:39.566+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.570+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.607+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.613+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.615+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x0000015188791ed8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.618+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.704+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.735+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.749+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.756+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.764+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.801+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.857+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.866+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.876+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.884+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:39.894+04:00  WARN 21516 --- [stackover-resource-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-05-22T23:52:40.774+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-22T23:52:41.464+04:00  INFO 21516 --- [stackover-resource-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-22T23:52:41.597+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-22T23:52:42.072+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-22T23:52:42.180+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-22T23:52:42.659+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f571c0e
+2025-05-22T23:52:42.663+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-22T23:52:42.780+04:00  WARN 21516 --- [stackover-resource-service] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-22T23:52:45.892+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table if exists answer 
+       drop constraint if exists FK8frr4bcabmmeyyu60qt7iiblo
+2025-05-22T23:52:45.927+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:45.928+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "answer" does not exist, skipping
+Hibernate: 
+    alter table if exists answer 
+       drop constraint if exists FK2k36bpxtxus6sxyg8mlof5js1
+2025-05-22T23:52:45.930+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:45.930+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "answer" does not exist, skipping
+Hibernate: 
+    alter table if exists bookmarks 
+       drop constraint if exists FKmge2txjhd0hq1ji859u0ylwyw
+2025-05-22T23:52:45.932+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:45.932+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "bookmarks" does not exist, skipping
+Hibernate: 
+    alter table if exists bookmarks 
+       drop constraint if exists FKlo0de495ruc6wr4j8uim9fc2e
+2025-05-22T23:52:45.934+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:45.935+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "bookmarks" does not exist, skipping
+Hibernate: 
+    alter table if exists comment 
+       drop constraint if exists FKl4xlhaqa07wrvf446sjwngh8j
+2025-05-22T23:52:45.944+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:45.944+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "comment" does not exist, skipping
+Hibernate: 
+    alter table if exists comment_answer 
+       drop constraint if exists FKdqdik3krvw5227fq8oiei7vn4
+2025-05-22T23:52:45.950+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:45.951+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "comment_answer" does not exist, skipping
+Hibernate: 
+    alter table if exists comment_answer 
+       drop constraint if exists FKnn21q9sk8i3o0dmfjv4cddh1l
+2025-05-22T23:52:45.960+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:45.960+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "comment_answer" does not exist, skipping
+Hibernate: 
+    alter table if exists comment_question 
+       drop constraint if exists FKlwn8mb26mcn6uggq1osko82fs
+2025-05-22T23:52:45.969+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:45.969+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "comment_question" does not exist, skipping
+Hibernate: 
+    alter table if exists comment_question 
+       drop constraint if exists FKup4pc0f37svsrid4lwxkeqf2
+2025-05-22T23:52:45.977+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:45.977+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "comment_question" does not exist, skipping
+Hibernate: 
+    alter table if exists group_chat 
+       drop constraint if exists FKhwhjdn057057sx83g73m0iag5
+2025-05-22T23:52:45.984+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:45.985+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "group_chat" does not exist, skipping
+Hibernate: 
+    alter table if exists groupchat_has_users 
+       drop constraint if exists FKd1tr2cxaudn9q2ea52ydi3sea
+2025-05-22T23:52:46.013+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.013+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "groupchat_has_users" does not exist, skipping
+Hibernate: 
+    alter table if exists groupchat_has_users 
+       drop constraint if exists FK2rtdyfisemfv23xnmsxopptng
+2025-05-22T23:52:46.020+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.020+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "groupchat_has_users" does not exist, skipping
+Hibernate: 
+    alter table if exists message 
+       drop constraint if exists FKmejd0ykokrbuekwwgd5a5xt8a
+2025-05-22T23:52:46.023+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.024+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "message" does not exist, skipping
+Hibernate: 
+    alter table if exists message 
+       drop constraint if exists FKlgr15f5qgibclatnawcadb4x9
+2025-05-22T23:52:46.026+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.026+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "message" does not exist, skipping
+Hibernate: 
+    alter table if exists question 
+       drop constraint if exists FKtg7oxllrdp5tf8isrfmory7yo
+2025-05-22T23:52:46.031+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.031+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "question" does not exist, skipping
+Hibernate: 
+    alter table if exists question_has_tag 
+       drop constraint if exists FKrg80k8r5dshnsufpxu1p0d8gp
+2025-05-22T23:52:46.034+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.034+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "question_has_tag" does not exist, skipping
+Hibernate: 
+    alter table if exists question_has_tag 
+       drop constraint if exists FK95qkp3v84rs97v7alcfk77fdr
+2025-05-22T23:52:46.042+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.043+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "question_has_tag" does not exist, skipping
+Hibernate: 
+    alter table if exists question_viewed 
+       drop constraint if exists FKqeg29r7uu1g1flepcpm4mv1g2
+2025-05-22T23:52:46.046+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.046+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "question_viewed" does not exist, skipping
+Hibernate: 
+    alter table if exists question_viewed 
+       drop constraint if exists FKnw7lp8384y34tnaulsvmmfnub
+2025-05-22T23:52:46.049+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.049+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "question_viewed" does not exist, skipping
+Hibernate: 
+    alter table if exists related_tag 
+       drop constraint if exists FKk5320uu5wbdyg2xku67qp8aqe
+2025-05-22T23:52:46.052+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.052+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "related_tag" does not exist, skipping
+Hibernate: 
+    alter table if exists related_tag 
+       drop constraint if exists FKnb1cmjyv0amiv491xlx4xi6w1
+2025-05-22T23:52:46.054+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.054+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "related_tag" does not exist, skipping
+Hibernate: 
+    alter table if exists reputation 
+       drop constraint if exists FKsqo308es5w7bvg914o1mwrn2m
+2025-05-22T23:52:46.056+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.057+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "reputation" does not exist, skipping
+Hibernate: 
+    alter table if exists reputation 
+       drop constraint if exists FKlndsyfrqg3b6g87gplymx8y6r
+2025-05-22T23:52:46.061+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.061+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "reputation" does not exist, skipping
+Hibernate: 
+    alter table if exists reputation 
+       drop constraint if exists FKolofwdfwvpjawwa9gpfvtycwf
+2025-05-22T23:52:46.063+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.063+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "reputation" does not exist, skipping
+Hibernate: 
+    alter table if exists reputation 
+       drop constraint if exists FKqm7j2hn9g8f57qjvw5r1vebcs
+2025-05-22T23:52:46.066+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.066+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "reputation" does not exist, skipping
+Hibernate: 
+    alter table if exists single_chat 
+       drop constraint if exists FKent72vkye8jx5pivbn0fk0h2m
+2025-05-22T23:52:46.068+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.069+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "single_chat" does not exist, skipping
+Hibernate: 
+    alter table if exists single_chat 
+       drop constraint if exists FK3n1idibr3yw114ogpftw7tc6o
+2025-05-22T23:52:46.071+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.071+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "single_chat" does not exist, skipping
+Hibernate: 
+    alter table if exists single_chat 
+       drop constraint if exists FKld25t5j2cqwg9mgp2njmu31xo
+2025-05-22T23:52:46.073+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.073+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "single_chat" does not exist, skipping
+Hibernate: 
+    alter table if exists tag_ignore 
+       drop constraint if exists FK7wnisc677h8s3wb6o4mv2oqkf
+2025-05-22T23:52:46.076+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.077+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "tag_ignore" does not exist, skipping
+Hibernate: 
+    alter table if exists tag_ignore 
+       drop constraint if exists FKjjdrwp57ok5c1ckuwqsft1qxf
+2025-05-22T23:52:46.079+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.079+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "tag_ignore" does not exist, skipping
+Hibernate: 
+    alter table if exists tag_tracked 
+       drop constraint if exists FKpn5ysi8igj9rmnun213hg5uf
+2025-05-22T23:52:46.081+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.081+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "tag_tracked" does not exist, skipping
+Hibernate: 
+    alter table if exists tag_tracked 
+       drop constraint if exists FKi60fykn402bntk377q2t9ybde
+2025-05-22T23:52:46.083+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.084+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "tag_tracked" does not exist, skipping
+Hibernate: 
+    alter table if exists user_badges 
+       drop constraint if exists FK337cc9ux9pqlb991y6w43to3j
+2025-05-22T23:52:46.085+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.085+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "user_badges" does not exist, skipping
+Hibernate: 
+    alter table if exists user_badges 
+       drop constraint if exists FKfb1c6pv1fesnielua9xtgci76
+2025-05-22T23:52:46.088+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.088+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "user_badges" does not exist, skipping
+Hibernate: 
+    alter table if exists user_entity 
+       drop constraint if exists FKpostrnt7qdgc4m56i71qlkl61
+2025-05-22T23:52:46.090+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.090+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "user_entity" does not exist, skipping
+Hibernate: 
+    alter table if exists user_favorite_question 
+       drop constraint if exists FKlp6cfgrasgyon52khtdjjgi02
+2025-05-22T23:52:46.112+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.112+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "user_favorite_question" does not exist, skipping
+Hibernate: 
+    alter table if exists user_favorite_question 
+       drop constraint if exists FKnhawqa1q89ai58etpxjbvlt3c
+2025-05-22T23:52:46.158+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.158+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "user_favorite_question" does not exist, skipping
+Hibernate: 
+    alter table if exists votes_on_answers 
+       drop constraint if exists FKjyyufwvq2xtar6hhcajuv73f9
+2025-05-22T23:52:46.197+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.197+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "votes_on_answers" does not exist, skipping
+Hibernate: 
+    alter table if exists votes_on_answers 
+       drop constraint if exists FKi8gxkndohkt08w93qkx756d8e
+2025-05-22T23:52:46.200+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.200+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "votes_on_answers" does not exist, skipping
+Hibernate: 
+    alter table if exists votes_on_questions 
+       drop constraint if exists FKiu40gq78m9r2n8nmwnefjxyry
+2025-05-22T23:52:46.207+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.207+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "votes_on_questions" does not exist, skipping
+Hibernate: 
+    alter table if exists votes_on_questions 
+       drop constraint if exists FK5rc898att1153186h64v2lym2
+2025-05-22T23:52:46.212+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.212+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "votes_on_questions" does not exist, skipping
+Hibernate: 
+    drop table if exists answer cascade
+2025-05-22T23:52:46.220+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.220+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "answer" does not exist, skipping
+Hibernate: 
+    drop table if exists badges cascade
+2025-05-22T23:52:46.226+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.227+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "badges" does not exist, skipping
+Hibernate: 
+    drop table if exists bookmarks cascade
+2025-05-22T23:52:46.229+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.229+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "bookmarks" does not exist, skipping
+Hibernate: 
+    drop table if exists chat cascade
+2025-05-22T23:52:46.233+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.233+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "chat" does not exist, skipping
+Hibernate: 
+    drop table if exists comment cascade
+2025-05-22T23:52:46.236+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.236+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "comment" does not exist, skipping
+Hibernate: 
+    drop table if exists comment_answer cascade
+2025-05-22T23:52:46.239+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.239+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "comment_answer" does not exist, skipping
+Hibernate: 
+    drop table if exists comment_question cascade
+2025-05-22T23:52:46.252+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.253+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "comment_question" does not exist, skipping
+Hibernate: 
+    drop table if exists group_chat cascade
+2025-05-22T23:52:46.266+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.267+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "group_chat" does not exist, skipping
+Hibernate: 
+    drop table if exists groupchat_has_users cascade
+2025-05-22T23:52:46.297+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.297+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "groupchat_has_users" does not exist, skipping
+Hibernate: 
+    drop table if exists message cascade
+2025-05-22T23:52:46.306+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.307+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "message" does not exist, skipping
+Hibernate: 
+    drop table if exists question cascade
+2025-05-22T23:52:46.339+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.339+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "question" does not exist, skipping
+Hibernate: 
+    drop table if exists question_has_tag cascade
+2025-05-22T23:52:46.354+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.354+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "question_has_tag" does not exist, skipping
+Hibernate: 
+    drop table if exists question_viewed cascade
+2025-05-22T23:52:46.366+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.367+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "question_viewed" does not exist, skipping
+Hibernate: 
+    drop table if exists related_tag cascade
+2025-05-22T23:52:46.370+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.370+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "related_tag" does not exist, skipping
+Hibernate: 
+    drop table if exists reputation cascade
+2025-05-22T23:52:46.389+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.390+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "reputation" does not exist, skipping
+Hibernate: 
+    drop table if exists role cascade
+2025-05-22T23:52:46.400+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.401+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "role" does not exist, skipping
+Hibernate: 
+    drop table if exists single_chat cascade
+2025-05-22T23:52:46.423+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.424+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "single_chat" does not exist, skipping
+Hibernate: 
+    drop table if exists tag cascade
+2025-05-22T23:52:46.453+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.454+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tag" does not exist, skipping
+Hibernate: 
+    drop table if exists tag_ignore cascade
+2025-05-22T23:52:46.463+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.464+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tag_ignore" does not exist, skipping
+Hibernate: 
+    drop table if exists tag_tracked cascade
+2025-05-22T23:52:46.467+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.468+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tag_tracked" does not exist, skipping
+Hibernate: 
+    drop table if exists user_badges cascade
+2025-05-22T23:52:46.475+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.475+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "user_badges" does not exist, skipping
+Hibernate: 
+    drop table if exists user_entity cascade
+2025-05-22T23:52:46.505+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.505+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "user_entity" does not exist, skipping
+Hibernate: 
+    drop table if exists user_favorite_question cascade
+2025-05-22T23:52:46.510+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.510+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "user_favorite_question" does not exist, skipping
+Hibernate: 
+    drop table if exists votes_on_answers cascade
+2025-05-22T23:52:46.517+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.517+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "votes_on_answers" does not exist, skipping
+Hibernate: 
+    drop table if exists votes_on_questions cascade
+2025-05-22T23:52:46.520+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.520+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "votes_on_questions" does not exist, skipping
+Hibernate: 
+    drop sequence if exists id_pool_sequence
+2025-05-22T23:52:46.552+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-05-22T23:52:46.552+04:00  WARN 21516 --- [stackover-resource-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "id_pool_sequence" does not exist, skipping
+Hibernate: 
+    create sequence id_pool_sequence start with 1 increment by 100
+Hibernate: 
+    create table answer (
+        is_deleted boolean not null,
+        is_deleted_by_moderator boolean not null,
+        is_helpful boolean not null,
+        date_accept_time timestamp(6),
+        id bigint not null,
+        persist_date timestamp(6),
+        question_id bigint not null,
+        update_date timestamp(6) not null,
+        user_id bigint not null,
+        html_body varchar(32600) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table badges (
+        reputations_for_merit integer,
+        id bigint not null,
+        badge_name varchar(255),
+        description varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table bookmarks (
+        id bigserial not null,
+        question_id bigint not null,
+        user_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table chat (
+        chat_type int2 check (chat_type between 0 and 1),
+        id bigint not null,
+        persist_date timestamp(6),
+        title varchar(32600),
+        primary key (id)
+    )
+Hibernate: 
+    create table comment (
+        comment_type int2 not null check (comment_type between 0 and 1),
+        id bigint not null,
+        last_redaction_date timestamp(6),
+        persist_date timestamp(6),
+        user_id bigint not null,
+        text varchar(32600) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table comment_answer (
+        answer_id bigint not null,
+        comment_text_id bigint not null,
+        primary key (comment_text_id)
+    )
+Hibernate: 
+    create table comment_question (
+        comment_text_id bigint not null,
+        question_id bigint not null,
+        primary key (comment_text_id)
+    )
+Hibernate: 
+    create table group_chat (
+        chat_id bigint not null,
+        primary key (chat_id)
+    )
+Hibernate: 
+    create table groupchat_has_users (
+        chat_id bigint not null,
+        user_id bigint not null,
+        primary key (chat_id, user_id)
+    )
+Hibernate: 
+    create table message (
+        chat_id bigint not null,
+        id bigint not null,
+        last_redaction_date timestamp(6) not null,
+        persist_date timestamp(6),
+        user_sender_id bigint not null,
+        message varchar(32600),
+        primary key (id)
+    )
+Hibernate: 
+    create table question (
+        is_deleted boolean,
+        id bigint not null,
+        last_redaction_date timestamp(6) not null,
+        persist_date timestamp(6),
+        user_id bigint not null,
+        description varchar(32600) not null,
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table question_has_tag (
+        question_id bigint not null,
+        tag_id bigint not null
+    )
+Hibernate: 
+    create table question_viewed (
+        id bigint not null,
+        persist_date timestamp(6),
+        question_id bigint,
+        user_id bigint,
+        primary key (id)
+    )
+Hibernate: 
+    create table related_tag (
+        child_tag bigint not null,
+        id bigint not null,
+        main_tag bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table reputation (
+        count integer,
+        type smallint not null check (type between 0 and 3),
+        answer_id bigint,
+        author_id bigint not null,
+        id bigint not null,
+        persist_date timestamp(6),
+        question_id bigint,
+        sender_id bigint,
+        primary key (id)
+    )
+Hibernate: 
+    create table role (
+        id bigint not null,
+        name varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table single_chat (
+        chat_id bigint not null,
+        use_two_id bigint not null,
+        user_one_id bigint not null,
+        primary key (chat_id)
+    )
+Hibernate: 
+    create table tag (
+        id bigint not null,
+        persist_date timestamp(6),
+        description varchar(32600),
+        name varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table tag_ignore (
+        id bigint not null,
+        ignored_tag_id bigint not null,
+        persist_date timestamp(6),
+        user_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table tag_tracked (
+        id bigint not null,
+        persist_date timestamp(6),
+        tracked_tag_id bigint not null,
+        user_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table user_badges (
+        ready boolean,
+        badges_id bigint,
+        id bigint not null,
+        user_id bigint,
+        primary key (id)
+    )
+Hibernate: 
+    create table user_entity (
+        is_deleted boolean,
+        is_enabled boolean,
+        id bigint not null,
+        last_redaction_date timestamp(6) not null,
+        persist_date timestamp(6),
+        role_id bigint not null,
+        about varchar(255),
+        city varchar(255),
+        email varchar(255),
+        full_name varchar(255),
+        image_link varchar(255),
+        link_github varchar(255),
+        link_site varchar(255),
+        link_vk varchar(255),
+        nickname varchar(255),
+        password varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table user_favorite_question (
+        id bigint not null,
+        persist_date timestamp(6) not null,
+        question_id bigint not null,
+        user_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table votes_on_answers (
+        answer_id bigint not null,
+        id bigint not null,
+        persist_date timestamp(6),
+        user_id bigint not null,
+        vote_type_answer varchar(255) check (vote_type_answer in ('UP','DOWN')),
+        primary key (id)
+    )
+Hibernate: 
+    create table votes_on_questions (
+        id bigint not null,
+        persist_date timestamp(6),
+        question_id bigint,
+        user_id bigint,
+        vote_type_question varchar(255) check (vote_type_question in ('UP','DOWN')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists answer 
+       add constraint FK8frr4bcabmmeyyu60qt7iiblo 
+       foreign key (question_id) 
+       references question
+Hibernate: 
+    alter table if exists answer 
+       add constraint FK2k36bpxtxus6sxyg8mlof5js1 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists bookmarks 
+       add constraint FKmge2txjhd0hq1ji859u0ylwyw 
+       foreign key (question_id) 
+       references question
+Hibernate: 
+    alter table if exists bookmarks 
+       add constraint FKlo0de495ruc6wr4j8uim9fc2e 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists comment 
+       add constraint FKl4xlhaqa07wrvf446sjwngh8j 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists comment_answer 
+       add constraint FKdqdik3krvw5227fq8oiei7vn4 
+       foreign key (answer_id) 
+       references answer
+Hibernate: 
+    alter table if exists comment_answer 
+       add constraint FKnn21q9sk8i3o0dmfjv4cddh1l 
+       foreign key (comment_text_id) 
+       references comment
+Hibernate: 
+    alter table if exists comment_question 
+       add constraint FKlwn8mb26mcn6uggq1osko82fs 
+       foreign key (comment_text_id) 
+       references comment
+Hibernate: 
+    alter table if exists comment_question 
+       add constraint FKup4pc0f37svsrid4lwxkeqf2 
+       foreign key (question_id) 
+       references question
+Hibernate: 
+    alter table if exists group_chat 
+       add constraint FKhwhjdn057057sx83g73m0iag5 
+       foreign key (chat_id) 
+       references chat
+Hibernate: 
+    alter table if exists groupchat_has_users 
+       add constraint FKd1tr2cxaudn9q2ea52ydi3sea 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists groupchat_has_users 
+       add constraint FK2rtdyfisemfv23xnmsxopptng 
+       foreign key (chat_id) 
+       references group_chat
+Hibernate: 
+    alter table if exists message 
+       add constraint FKmejd0ykokrbuekwwgd5a5xt8a 
+       foreign key (chat_id) 
+       references chat
+Hibernate: 
+    alter table if exists message 
+       add constraint FKlgr15f5qgibclatnawcadb4x9 
+       foreign key (user_sender_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists question 
+       add constraint FKtg7oxllrdp5tf8isrfmory7yo 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists question_has_tag 
+       add constraint FKrg80k8r5dshnsufpxu1p0d8gp 
+       foreign key (tag_id) 
+       references tag
+Hibernate: 
+    alter table if exists question_has_tag 
+       add constraint FK95qkp3v84rs97v7alcfk77fdr 
+       foreign key (question_id) 
+       references question
+Hibernate: 
+    alter table if exists question_viewed 
+       add constraint FKqeg29r7uu1g1flepcpm4mv1g2 
+       foreign key (question_id) 
+       references question
+Hibernate: 
+    alter table if exists question_viewed 
+       add constraint FKnw7lp8384y34tnaulsvmmfnub 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists related_tag 
+       add constraint FKk5320uu5wbdyg2xku67qp8aqe 
+       foreign key (child_tag) 
+       references tag
+Hibernate: 
+    alter table if exists related_tag 
+       add constraint FKnb1cmjyv0amiv491xlx4xi6w1 
+       foreign key (main_tag) 
+       references tag
+Hibernate: 
+    alter table if exists reputation 
+       add constraint FKsqo308es5w7bvg914o1mwrn2m 
+       foreign key (answer_id) 
+       references answer
+Hibernate: 
+    alter table if exists reputation 
+       add constraint FKlndsyfrqg3b6g87gplymx8y6r 
+       foreign key (author_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists reputation 
+       add constraint FKolofwdfwvpjawwa9gpfvtycwf 
+       foreign key (question_id) 
+       references question
+Hibernate: 
+    alter table if exists reputation 
+       add constraint FKqm7j2hn9g8f57qjvw5r1vebcs 
+       foreign key (sender_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists single_chat 
+       add constraint FKent72vkye8jx5pivbn0fk0h2m 
+       foreign key (chat_id) 
+       references chat
+Hibernate: 
+    alter table if exists single_chat 
+       add constraint FK3n1idibr3yw114ogpftw7tc6o 
+       foreign key (use_two_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists single_chat 
+       add constraint FKld25t5j2cqwg9mgp2njmu31xo 
+       foreign key (user_one_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists tag_ignore 
+       add constraint FK7wnisc677h8s3wb6o4mv2oqkf 
+       foreign key (ignored_tag_id) 
+       references tag
+Hibernate: 
+    alter table if exists tag_ignore 
+       add constraint FKjjdrwp57ok5c1ckuwqsft1qxf 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists tag_tracked 
+       add constraint FKpn5ysi8igj9rmnun213hg5uf 
+       foreign key (tracked_tag_id) 
+       references tag
+Hibernate: 
+    alter table if exists tag_tracked 
+       add constraint FKi60fykn402bntk377q2t9ybde 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists user_badges 
+       add constraint FK337cc9ux9pqlb991y6w43to3j 
+       foreign key (badges_id) 
+       references badges
+Hibernate: 
+    alter table if exists user_badges 
+       add constraint FKfb1c6pv1fesnielua9xtgci76 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists user_entity 
+       add constraint FKpostrnt7qdgc4m56i71qlkl61 
+       foreign key (role_id) 
+       references role
+Hibernate: 
+    alter table if exists user_favorite_question 
+       add constraint FKlp6cfgrasgyon52khtdjjgi02 
+       foreign key (question_id) 
+       references question
+Hibernate: 
+    alter table if exists user_favorite_question 
+       add constraint FKnhawqa1q89ai58etpxjbvlt3c 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists votes_on_answers 
+       add constraint FKjyyufwvq2xtar6hhcajuv73f9 
+       foreign key (answer_id) 
+       references answer
+Hibernate: 
+    alter table if exists votes_on_answers 
+       add constraint FKi8gxkndohkt08w93qkx756d8e 
+       foreign key (user_id) 
+       references user_entity
+Hibernate: 
+    alter table if exists votes_on_questions 
+       add constraint FKiu40gq78m9r2n8nmwnefjxyry 
+       foreign key (question_id) 
+       references question
+Hibernate: 
+    alter table if exists votes_on_questions 
+       add constraint FK5rc898att1153186h64v2lym2 
+       foreign key (user_id) 
+       references user_entity
+2025-05-22T23:52:47.341+04:00  INFO 21516 --- [stackover-resource-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22T23:52:49.518+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-22T23:52:53.269+04:00  WARN 21516 --- [stackover-resource-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-22T23:52:53.675+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2025-05-22T23:52:54.138+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-22T23:52:54.312+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-22T23:52:54.602+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-22T23:52:55.510+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-22T23:52:55.510+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-22T23:52:55.514+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-22T23:52:55.701+04:00  INFO 21516 --- [stackover-resource-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-22T23:52:55.801+04:00  WARN 21516 --- [stackover-resource-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-22T23:52:55.928+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-22T23:52:56.473+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-22T23:52:56.494+04:00  INFO 21516 --- [stackover-resource-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22T23:52:56.611+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22T23:52:56.611+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22T23:52:56.612+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22T23:52:56.612+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22T23:52:56.612+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22T23:52:56.612+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-22T23:52:56.612+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22T23:52:57.643+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2025-05-22T23:52:57.862+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-22T23:52:58.004+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-22T23:52:58.008+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-05-22T23:52:58.064+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22T23:52:58.069+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-22T23:52:58.074+04:00  INFO 21516 --- [stackover-resource-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-22T23:52:58.108+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747943578094 with initial instances count: 0
+2025-05-22T23:52:58.115+04:00  INFO 21516 --- [stackover-resource-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STACKOVER-RESOURCE-SERVICE with eureka with status UP
+2025-05-22T23:52:58.116+04:00  INFO 21516 --- [stackover-resource-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747943578116, current=UP, previous=STARTING]
+2025-05-22T23:52:58.121+04:00  INFO 21516 --- [stackover-resource-service] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STACKOVER-RESOURCE-SERVICE/stackover-resource-service:8181: registering service...
+2025-05-22T23:52:58.139+04:00 DEBUG 21516 --- [stackover-resource-service] [nfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/STACKOVER-RESOURCE-SERVICE
+2025-05-22T23:52:58.147+04:00 DEBUG 21516 --- [stackover-resource-service] [nfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-22T23:52:58.223+04:00 DEBUG 21516 --- [stackover-resource-service] [nfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = stackover-resource-service:8181, appName = STACKOVER-RESOURCE-SERVICE, hostName = stackover-resource-service, status = UP, ipAddr = 172.17.80.1, port = 8181, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@b78835e] as "application/json"
+2025-05-22T23:52:58.237+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.r.o.ResourceAnswerControllerTest   : Started ResourceAnswerControllerTest in 25.636 seconds (process running for 34.548)
+2025-05-22T23:52:58.293+04:00 DEBUG 21516 --- [stackover-resource-service] [nfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2025-05-22T23:52:58.294+04:00  INFO 21516 --- [stackover-resource-service] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STACKOVER-RESOURCE-SERVICE/stackover-resource-service:8181 - registration status: 204
+2025-05-22T23:52:58.380+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Creating container for image: postgres:14.5
+2025-05-22T23:52:58.909+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 is starting: 69dca6580bb4bb9225d54e8220d913d1e727a0d7df6591778da84434382f84bd
+2025-05-22T23:53:02.324+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 started in PT3.9445525S
+2025-05-22T23:53:02.325+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container is started (JDBC URL: jdbc:postgresql://localhost:55488/test?loggerLevel=OFF)
+Test DB URL: jdbc:postgresql://localhost:55488/test?loggerLevel=OFF
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='DOWN'
+Hibernate: 
+    select
+        count(r1_0.id)>0 
+    from
+        reputation r1_0 
+    where
+        r1_0.sender_id=? 
+        and r1_0.answer_id=?
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='DOWN'
+Hibernate: 
+    select
+        coalesce(sum(r1_0.count), 0) 
+    from
+        reputation r1_0 
+    where
+        r1_0.author_id=? 
+        and r1_0.answer_id=?
+2025-05-22T23:53:02.683+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+2025-05-22T23:53:02.716+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.rest.out.ResourceAnswerController  : Начало обработки голоса против ответа. QuestionID: 100, AnswerID: 100, AccountID: 101
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.date_accept_time,
+        a1_0.html_body,
+        a1_0.is_deleted,
+        a1_0.is_deleted_by_moderator,
+        a1_0.is_helpful,
+        a1_0.persist_date,
+        a1_0.question_id,
+        a1_0.update_date,
+        a1_0.user_id 
+    from
+        answer a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        va1_0.id,
+        va1_0.answer_id,
+        va1_0.persist_date,
+        va1_0.user_id,
+        va1_0.vote_type_answer 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.user_id=?
+2025-05-22T23:53:02.974+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.s.e.impl.VoteAnswerServiceImpl     : Пользователь уже голосовал 'DOWN'
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    join
+        answer a1_0 
+            on a1_0.id=va1_0.answer_id 
+    where
+        a1_0.id=? 
+        and va1_0.vote_type_answer=?
+2025-05-22T23:53:02.998+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-22T23:53:03.001+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [1]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/user/question/100/answer/100/downVote
+       Parameters = {accountId=[101]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = stackover.resource.service.rest.out.ResourceAnswerController
+           Method = stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = 1
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='DOWN'
+Hibernate: 
+    select
+        coalesce(sum(r1_0.count), 0) 
+    from
+        reputation r1_0 
+    where
+        r1_0.author_id=? 
+        and r1_0.answer_id=?
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\1\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="successfulDownVote_ShouldDecreaseVotesAndReputation" classname="stackover.resource.service.rest.out.ResourceAnswerControllerTest" time="5.629">
+    <system-out><![CDATA[2025-05-22T23:53:03.981+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Creating container for image: postgres:14.5
+2025-05-22T23:53:04.293+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 is starting: f654ad78006b8ae3074b4200186476cac23dcaadff758a75b2eae7b229154a1e
+2025-05-22T23:53:08.401+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 started in PT4.4205922S
+2025-05-22T23:53:08.401+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container is started (JDBC URL: jdbc:postgresql://localhost:55490/test?loggerLevel=OFF)
+Test DB URL: jdbc:postgresql://localhost:55490/test?loggerLevel=OFF
+Hibernate: 
+    select
+        count(r1_0.id)>0 
+    from
+        reputation r1_0 
+    where
+        r1_0.sender_id=? 
+        and r1_0.answer_id=?
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='DOWN'
+Hibernate: 
+    select
+        coalesce(sum(r1_0.count), 0) 
+    from
+        reputation r1_0 
+    where
+        r1_0.author_id=? 
+        and r1_0.answer_id=?
+2025-05-22T23:53:08.429+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+2025-05-22T23:53:08.430+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.rest.out.ResourceAnswerController  : Начало обработки голоса против ответа. QuestionID: 100, AnswerID: 100, AccountID: 101
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.date_accept_time,
+        a1_0.html_body,
+        a1_0.is_deleted,
+        a1_0.is_deleted_by_moderator,
+        a1_0.is_helpful,
+        a1_0.persist_date,
+        a1_0.question_id,
+        a1_0.update_date,
+        a1_0.user_id 
+    from
+        answer a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        va1_0.id,
+        va1_0.answer_id,
+        va1_0.persist_date,
+        va1_0.user_id,
+        va1_0.vote_type_answer 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.user_id=?
+Hibernate: 
+    select
+        nextval('id_pool_sequence')
+2025-05-22T23:53:08.462+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.s.e.impl.VoteAnswerServiceImpl     : Добавлен новый голос 'DOWN'
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.answer_id,
+        r1_0.author_id,
+        r1_0.count,
+        r1_0.persist_date,
+        r1_0.question_id,
+        r1_0.sender_id,
+        r1_0.type 
+    from
+        reputation r1_0 
+    left join
+        user_entity s1_0 
+            on s1_0.id=r1_0.sender_id 
+    left join
+        answer a1_0 
+            on a1_0.id=r1_0.answer_id 
+    where
+        s1_0.id=? 
+        and a1_0.id=?
+Hibernate: 
+    select
+        nextval('id_pool_sequence')
+Hibernate: 
+    insert 
+    into
+        votes_on_answers
+        (answer_id, persist_date, user_id, vote_type_answer, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reputation
+        (answer_id, author_id, count, persist_date, question_id, sender_id, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    join
+        answer a1_0 
+            on a1_0.id=va1_0.answer_id 
+    where
+        a1_0.id=? 
+        and va1_0.vote_type_answer=?
+2025-05-22T23:53:08.543+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-22T23:53:08.543+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [1]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/user/question/100/answer/100/downVote
+       Parameters = {accountId=[101]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = stackover.resource.service.rest.out.ResourceAnswerController
+           Method = stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = 1
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='DOWN'
+Hibernate: 
+    select
+        coalesce(sum(r1_0.count), 0) 
+    from
+        reputation r1_0 
+    where
+        r1_0.author_id=? 
+        and r1_0.answer_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.answer_id,
+        r1_0.author_id,
+        r1_0.count,
+        r1_0.persist_date,
+        r1_0.question_id,
+        r1_0.sender_id,
+        r1_0.type 
+    from
+        reputation r1_0 
+    where
+        r1_0.sender_id=? 
+        and r1_0.answer_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="changeVoteFromUpToDown_ShouldUpdateVotesAndReputation" classname="stackover.resource.service.rest.out.ResourceAnswerControllerTest" time="4.997">
+    <system-out><![CDATA[2025-05-22T23:53:09.613+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Creating container for image: postgres:14.5
+2025-05-22T23:53:10.236+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 is starting: 32e94b0e14784b509f1732bc19f930cd8243dabfb3ec3c349991c61cac9b195b
+2025-05-22T23:53:13.526+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 started in PT3.9124658S
+2025-05-22T23:53:13.526+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container is started (JDBC URL: jdbc:postgresql://localhost:55495/test?loggerLevel=OFF)
+Test DB URL: jdbc:postgresql://localhost:55495/test?loggerLevel=OFF
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='UP'
+Hibernate: 
+    select
+        count(r1_0.id)>0 
+    from
+        reputation r1_0 
+    where
+        r1_0.sender_id=? 
+        and r1_0.answer_id=?
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='DOWN'
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='UP'
+Hibernate: 
+    select
+        coalesce(sum(r1_0.count), 0) 
+    from
+        reputation r1_0 
+    where
+        r1_0.author_id=? 
+        and r1_0.answer_id=?
+2025-05-22T23:53:13.570+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+2025-05-22T23:53:13.571+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.rest.out.ResourceAnswerController  : Начало обработки голоса против ответа. QuestionID: 100, AnswerID: 100, AccountID: 101
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.date_accept_time,
+        a1_0.html_body,
+        a1_0.is_deleted,
+        a1_0.is_deleted_by_moderator,
+        a1_0.is_helpful,
+        a1_0.persist_date,
+        a1_0.question_id,
+        a1_0.update_date,
+        a1_0.user_id 
+    from
+        answer a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        va1_0.id,
+        va1_0.answer_id,
+        va1_0.persist_date,
+        va1_0.user_id,
+        va1_0.vote_type_answer 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.user_id=?
+2025-05-22T23:53:13.584+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.s.e.impl.VoteAnswerServiceImpl     : Голос изменён на 'DOWN'
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.answer_id,
+        r1_0.author_id,
+        r1_0.count,
+        r1_0.persist_date,
+        r1_0.question_id,
+        r1_0.sender_id,
+        r1_0.type 
+    from
+        reputation r1_0 
+    left join
+        user_entity s1_0 
+            on s1_0.id=r1_0.sender_id 
+    left join
+        answer a1_0 
+            on a1_0.id=r1_0.answer_id 
+    where
+        s1_0.id=? 
+        and a1_0.id=?
+Hibernate: 
+    update
+        votes_on_answers 
+    set
+        answer_id=?,
+        user_id=?,
+        vote_type_answer=? 
+    where
+        id=?
+Hibernate: 
+    update
+        reputation 
+    set
+        answer_id=?,
+        author_id=?,
+        count=?,
+        question_id=?,
+        sender_id=?,
+        type=? 
+    where
+        id=?
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    join
+        answer a1_0 
+            on a1_0.id=va1_0.answer_id 
+    where
+        a1_0.id=? 
+        and va1_0.vote_type_answer=?
+2025-05-22T23:53:13.650+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-22T23:53:13.650+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [1]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/user/question/100/answer/100/downVote
+       Parameters = {accountId=[101]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = stackover.resource.service.rest.out.ResourceAnswerController
+           Method = stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = 1
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='DOWN'
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='UP'
+Hibernate: 
+    select
+        coalesce(sum(r1_0.count), 0) 
+    from
+        reputation r1_0 
+    where
+        r1_0.author_id=? 
+        and r1_0.answer_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="accountNotExist_ShouldReturnBadRequest" classname="stackover.resource.service.rest.out.ResourceAnswerControllerTest" time="6.622">
+    <system-out><![CDATA[2025-05-22T23:53:14.625+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Creating container for image: postgres:14.5
+2025-05-22T23:53:15.149+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 is starting: c8cd338ae9fecaa7bf6ae072dd01357d319b7a0b57edd9bd915e531b7334a501
+2025-05-22T23:53:20.376+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 started in PT5.7506049S
+2025-05-22T23:53:20.377+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container is started (JDBC URL: jdbc:postgresql://localhost:55498/test?loggerLevel=OFF)
+Test DB URL: jdbc:postgresql://localhost:55498/test?loggerLevel=OFF
+2025-05-22T23:53:20.403+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+2025-05-22T23:53:20.403+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.rest.out.ResourceAnswerController  : Начало обработки голоса против ответа. QuestionID: 100, AnswerID: 100, AccountID: 999
+2025-05-22T23:53:20.411+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler stackover.resource.service.rest.advice.GlobalExceptionHandler#handleRSE(ResponseStatusException)
+2025-05-22T23:53:20.411+04:00  WARN 21516 --- [stackover-resource-service] [           main] s.r.s.r.advice.GlobalExceptionHandler    : ResponseStatusException: 400 BAD_REQUEST - Аккаунт не существует или недоступен
+2025-05-22T23:53:20.412+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-22T23:53:20.413+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Аккаунт не существует или недоступен"]
+2025-05-22T23:53:20.414+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Аккаунт не существует или недоступен"]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/user/question/100/answer/100/downVote
+       Parameters = {accountId=[999]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = stackover.resource.service.rest.out.ResourceAnswerController
+           Method = stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.server.ResponseStatusException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"68"]
+     Content type = text/plain;charset=UTF-8
+             Body = Аккаунт не существует или недоступен
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="voteForOwnAnswer_ShouldReturnBadRequest" classname="stackover.resource.service.rest.out.ResourceAnswerControllerTest" time="4.659">
+    <system-out><![CDATA[2025-05-22T23:53:21.250+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Creating container for image: postgres:14.5
+2025-05-22T23:53:21.592+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 is starting: c48b3734242ed8e789bc3a930eea21048f193a7b2d3ca914771df1879b81c9c8
+2025-05-22T23:53:24.971+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 started in PT3.7213427S
+2025-05-22T23:53:24.972+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container is started (JDBC URL: jdbc:postgresql://localhost:55509/test?loggerLevel=OFF)
+Test DB URL: jdbc:postgresql://localhost:55509/test?loggerLevel=OFF
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='DOWN'
+Hibernate: 
+    select
+        coalesce(sum(r1_0.count), 0) 
+    from
+        reputation r1_0 
+    where
+        r1_0.author_id=? 
+        and r1_0.answer_id=?
+2025-05-22T23:53:25.002+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+2025-05-22T23:53:25.003+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.rest.out.ResourceAnswerController  : Начало обработки голоса против ответа. QuestionID: 100, AnswerID: 100, AccountID: 100
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.date_accept_time,
+        a1_0.html_body,
+        a1_0.is_deleted,
+        a1_0.is_deleted_by_moderator,
+        a1_0.is_helpful,
+        a1_0.persist_date,
+        a1_0.question_id,
+        a1_0.update_date,
+        a1_0.user_id 
+    from
+        answer a1_0 
+    where
+        a1_0.id=?
+2025-05-22T23:53:25.009+04:00  WARN 21516 --- [stackover-resource-service] [           main] s.r.s.s.entity.impl.AnswerServiceImpl    : Попытка голосовать за свой ответ: userId=100
+2025-05-22T23:53:25.011+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler stackover.resource.service.rest.advice.GlobalExceptionHandler#handleRSE(ResponseStatusException)
+2025-05-22T23:53:25.012+04:00  WARN 21516 --- [stackover-resource-service] [           main] s.r.s.r.advice.GlobalExceptionHandler    : ResponseStatusException: 400 BAD_REQUEST - Нельзя голосовать за свой ответ
+2025-05-22T23:53:25.012+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-22T23:53:25.012+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Нельзя голосовать за свой ответ"]
+2025-05-22T23:53:25.013+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Нельзя голосовать за свой ответ"]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/user/question/100/answer/100/downVote
+       Parameters = {accountId=[100]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = stackover.resource.service.rest.out.ResourceAnswerController
+           Method = stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.server.ResponseStatusException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"58"]
+     Content type = text/plain;charset=UTF-8
+             Body = Нельзя голосовать за свой ответ
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        count(va1_0.id) 
+    from
+        votes_on_answers va1_0 
+    where
+        va1_0.answer_id=? 
+        and va1_0.vote_type_answer='DOWN'
+Hibernate: 
+    select
+        coalesce(sum(r1_0.count), 0) 
+    from
+        reputation r1_0 
+    where
+        r1_0.author_id=? 
+        and r1_0.answer_id=?
+Hibernate: 
+    select
+        count(r1_0.id)>0 
+    from
+        reputation r1_0 
+    where
+        r1_0.sender_id=? 
+        and r1_0.answer_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="answerNotExist_ShouldReturnNotFound" classname="stackover.resource.service.rest.out.ResourceAnswerControllerTest" time="5.188">
+    <system-out><![CDATA[2025-05-22T23:53:25.914+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Creating container for image: postgres:14.5
+2025-05-22T23:53:26.419+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 is starting: e3878f0113450792c8db68ab2c289b75032c92eb3e0a00d1e1ed9ee73d7ae8b8
+2025-05-22T23:53:28.070+04:00  INFO 21516 --- [stackover-resource-service] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22T23:53:28.070+04:00  INFO 21516 --- [stackover-resource-service] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22T23:53:28.070+04:00  INFO 21516 --- [stackover-resource-service] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22T23:53:28.070+04:00  INFO 21516 --- [stackover-resource-service] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22T23:53:28.071+04:00  INFO 21516 --- [stackover-resource-service] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22T23:53:28.071+04:00  INFO 21516 --- [stackover-resource-service] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-05-22T23:53:28.071+04:00  INFO 21516 --- [stackover-resource-service] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22T23:53:28.071+04:00 DEBUG 21516 --- [stackover-resource-service] [freshExecutor-0] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2025-05-22T23:53:28.071+04:00 DEBUG 21516 --- [stackover-resource-service] [freshExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-22T23:53:28.092+04:00 DEBUG 21516 --- [stackover-resource-service] [freshExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-22T23:53:28.092+04:00 DEBUG 21516 --- [stackover-resource-service] [freshExecutor-0] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-05-22T23:53:28.098+04:00 DEBUG 21516 --- [stackover-resource-service] [tbeatExecutor-0] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/STACKOVER-RESOURCE-SERVICE/stackover-resource-service:8181?status=UP&lastDirtyTimestamp=1747943578116
+2025-05-22T23:53:28.118+04:00  INFO 21516 --- [stackover-resource-service] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22T23:53:28.137+04:00 DEBUG 21516 --- [stackover-resource-service] [tbeatExecutor-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-05-22T23:53:28.155+04:00 DEBUG 21516 --- [stackover-resource-service] [tbeatExecutor-0] o.s.web.client.RestTemplate              : Response 200 OK
+2025-05-22T23:53:30.275+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 started in PT4.3608684S
+2025-05-22T23:53:30.276+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container is started (JDBC URL: jdbc:postgresql://localhost:55513/test?loggerLevel=OFF)
+Test DB URL: jdbc:postgresql://localhost:55513/test?loggerLevel=OFF
+2025-05-22T23:53:30.292+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+2025-05-22T23:53:30.293+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.rest.out.ResourceAnswerController  : Начало обработки голоса против ответа. QuestionID: 100, AnswerID: 999, AccountID: 101
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.date_accept_time,
+        a1_0.html_body,
+        a1_0.is_deleted,
+        a1_0.is_deleted_by_moderator,
+        a1_0.is_helpful,
+        a1_0.persist_date,
+        a1_0.question_id,
+        a1_0.update_date,
+        a1_0.user_id 
+    from
+        answer a1_0 
+    where
+        a1_0.id=?
+2025-05-22T23:53:30.303+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler stackover.resource.service.rest.advice.GlobalExceptionHandler#handleRSE(ResponseStatusException)
+2025-05-22T23:53:30.304+04:00  WARN 21516 --- [stackover-resource-service] [           main] s.r.s.r.advice.GlobalExceptionHandler    : ResponseStatusException: 404 NOT_FOUND - Ответ не найден
+2025-05-22T23:53:30.306+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-22T23:53:30.307+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Ответ не найден"]
+2025-05-22T23:53:30.310+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Ответ не найден"]
+]]></system-out>
+  </testcase>
+  <testcase name="invalidParameters_ShouldReturnBadRequest" classname="stackover.resource.service.rest.out.ResourceAnswerControllerTest" time="4.399">
+    <system-out><![CDATA[2025-05-22T23:53:31.106+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Creating container for image: postgres:14.5
+2025-05-22T23:53:31.338+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 is starting: 4492b7fefe717eaa79dec68dd8f8aadb8adb837c7ad19ac647a375858e608c64
+2025-05-22T23:53:34.680+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container postgres:14.5 started in PT3.573694S
+2025-05-22T23:53:34.680+04:00  INFO 21516 --- [stackover-resource-service] [           main] tc.postgres:14.5                         : Container is started (JDBC URL: jdbc:postgresql://localhost:55518/test?loggerLevel=OFF)
+Test DB URL: jdbc:postgresql://localhost:55518/test?loggerLevel=OFF
+2025-05-22T23:53:34.684+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to stackover.resource.service.rest.out.ResourceAnswerController#downVoteAnswer(Long, Long, Long)
+2025-05-22T23:53:34.685+04:00  INFO 21516 --- [stackover-resource-service] [           main] s.r.s.rest.out.ResourceAnswerController  : Начало обработки голоса против ответа. QuestionID: -1, AnswerID: -2, AccountID: -3
+2025-05-22T23:53:34.687+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler stackover.resource.service.rest.advice.GlobalExceptionHandler#handleRSE(ResponseStatusException)
+2025-05-22T23:53:34.688+04:00  WARN 21516 --- [stackover-resource-service] [           main] s.r.s.r.advice.GlobalExceptionHandler    : ResponseStatusException: 400 BAD_REQUEST - ID аккаунта должно быть положительным
+2025-05-22T23:53:34.688+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-22T23:53:34.689+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["ID аккаунта должно быть положительным"]
+2025-05-22T23:53:34.690+04:00 DEBUG 21516 --- [stackover-resource-service] [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "ID аккаунта должно быть положительным"]
+]]></system-out>
+  </testcase>
+</testsuite>

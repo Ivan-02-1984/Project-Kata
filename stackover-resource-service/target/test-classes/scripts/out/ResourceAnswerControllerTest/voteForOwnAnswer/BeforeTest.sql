@@ -1,0 +1,18 @@
+DELETE FROM role WHERE id = 1;
+INSERT INTO role (id, name) VALUES (1, 'USER');
+
+-- Только автор (который попытается голосовать за себя)
+INSERT INTO user_entity (id, email, password, full_name, persist_date, is_enabled, nickname, role_id, last_redaction_date)
+VALUES (100, 'author@example.com', 'password', 'Автор Ответа', CURRENT_TIMESTAMP, true, 'author', 1, CURRENT_TIMESTAMP);
+
+-- Вопрос
+INSERT INTO question (id, user_id, title, description, persist_date, last_redaction_date, is_deleted)
+VALUES (100, 100, 'Тестовый вопрос', 'Описание вопроса', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, false);
+
+-- Ответ
+INSERT INTO answer (id, user_id, question_id, html_body, persist_date, update_date, is_deleted, is_deleted_by_moderator, is_helpful)
+VALUES (100, 100, 100, 'Текст ответа', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, false, false, false);
+
+-- Репутация
+INSERT INTO reputation (id, author_id, count, type, persist_date)
+VALUES (100, 100, 100, 2, CURRENT_TIMESTAMP);

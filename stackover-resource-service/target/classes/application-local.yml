@@ -1,0 +1,21 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: ${JDBC_PROTOCOL}://${DB_SERVER}:${DB_PORT}/${DB_NAME}?currentSchema=${DB_SCHEMA}&createSchemaIfNotExist=${HIBERNATE_DDL_CREATE}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  liquibase:
+    enabled: false
+    change-log: classpath:db/changelog/db.changelog-master.xml
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    url: ${spring.datasource.url}
+    default-schema: public
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

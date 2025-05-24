@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопросы - StackOverflow</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Иконки Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Кастомные стили -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            background-color: #f8f9fa;
+            position: sticky;
+            top: 60px;
+        }
+        .question-card {
+            border-left: 3px solid #0d6efd;
+            margin-bottom: 20px;
+        }
+        .question-stats {
+            color: #6c757d;
+            font-size: 0.9rem;
+            text-align: right;
+        }
+        .question-title {
+            color: #0d6efd;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .question-excerpt {
+            color: #212529;
+            font-size: 0.9rem;
+        }
+        .question-tags {
+            margin-top: 10px;
+        }
+        .tag {
+            background-color: #e1ecf4;
+            color: #39739d;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            margin-top: 30px;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+<!-- Header будет вставлен через JS -->
+<div id="header-placeholder"></div>
+
+<div class="container-fluid mt-3">
+    <div class="row">
+        <!-- Sidebar будет вставлен через JS -->
+        <div class="col-md-2" id="sidebar-placeholder"></div>
+
+        <!-- Основное содержимое -->
+        <main class="col-md-7">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1>Все вопросы</h1>
+                <button class="btn btn-primary">Задать вопрос</button>
+            </div>
+
+            <div class="d-flex justify-content-between mb-3">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-secondary active">Интересные</button>
+                    <button type="button" class="btn btn-outline-secondary">Популярные</button>
+                    <button type="button" class="btn btn-outline-secondary">Новые</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-filter"></i> Фильтры</button>
+                </div>
+            </div>
+
+            <!-- Список вопросов -->
+            <div class="list-group">
+                <!-- Вопрос 1 -->
+                <div class="list-group-item question-card">
+                    <div class="row">
+                        <div class="col-2 question-stats">
+                            <div>5 голосов</div>
+                            <div class="text-success">2 ответа</div>
+                            <div>12 просмотров</div>
+                        </div>
+                        <div class="col-10">
+                            <h3 class="question-title">Как создать страницу вопросов с помощью Bootstrap?</h3>
+                            <p class="question-excerpt">Я пытаюсь создать страницу с вопросами, похожую на StackOverflow, используя только Bootstrap и HTML без JavaScript. Мне нужно, чтобы страница выглядела аккуратно и профессионально...</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="question-tags">
+                                    <span class="tag">html</span>
+                                    <span class="tag">bootstrap</span>
+                                    <span class="tag">верстка</span>
+                                </div>
+                                <div class="text-muted small">
+                                    <i class="bi bi-person"></i> спросил 2 часа назад
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вопрос 2 -->
+                <div class="list-group-item question-card">
+                    <div class="row">
+                        <div class="col-2 question-stats">
+                            <div>15 голосов</div>
+                            <div class="text-success">4 ответа</div>
+                            <div>56 просмотров</div>
+                        </div>
+                        <div class="col-10">
+                            <h3 class="question-title">Разница между margin и padding в CSS</h3>
+                            <p class="question-excerpt">Не могу до конца понять разницу между margin и padding. В каких случаях лучше использовать одно, а в каких другое? Есть ли какие-то особые случаи, когда...</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="question-tags">
+                                    <span class="tag">css</span>
+                                    <span class="tag">верстка</span>
+                                </div>
+                                <div class="text-muted small">
+                                    <i class="bi bi-person"></i> спросил вчера
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вопрос 3 -->
+                <div class="list-group-item question-card">
+                    <div class="row">
+                        <div class="col-2 question-stats">
+                            <div>3 голоса</div>
+                            <div class="text-success">1 ответ</div>
+                            <div>8 просмотров</div>
+                        </div>
+                        <div class="col-10">
+                            <h3 class="question-title">Как правильно использовать Grid в Bootstrap 5?</h3>
+                            <p class="question-excerpt">Перехожу с Bootstrap 4 на 5 версию и заметил некоторые изменения в grid системе. Какие основные отличия и как теперь правильно строить сетку?</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="question-tags">
+                                    <span class="tag">bootstrap</span>
+                                    <span class="tag">grid</span>
+                                </div>
+                                <div class="text-muted small">
+                                    <i class="bi bi-person"></i> спросил 3 дня назад
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Пагинация -->
+            <nav aria-label="Page navigation" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Назад</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Далее</a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+
+        <!-- Правая панель -->
+        <aside class="col-md-3">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Теги</h5>
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="tag mb-2">javascript</a>
+                        <a href="#" class="tag mb-2">python</a>
+                        <a href="#" class="tag mb-2">java</a>
+                        <a href="#" class="tag mb-2">c#</a>
+                        <a href="#" class="tag mb-2">php</a>
+                        <a href="#" class="tag mb-2">html</a>
+                        <a href="#" class="tag mb-2">css</a>
+                        <a href="#" class="tag mb-2">bootstrap</a>
+                        <a href="#" class="tag mb-2">react</a>
+                        <a href="#" class="tag mb-2">vue</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Популярные вопросы</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Как отцентрировать div по вертикали и горизонтали?</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Разница между let, const и var в JavaScript</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Как установить Node.js на Windows?</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Лучшие практики работы с Git</a></li>
+                        <li><a href="#" class="text-decoration-none">Как сделать адаптивную таблицу?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<!-- Footer будет вставлен через JS -->
+<div id="footer-placeholder"></div>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Скрипты для вставки header, sidebar и footer -->
+<script src="/js/header.js"></script>
+<script src="/js/sidebar.js"></script>
+<script src="/js/footer.js"></script>
+</body>
+</html>
